@@ -13,6 +13,7 @@ public class ApplyLecturesDto {
 
     @Builder
     public record Response(
-            Boolean isSuccess
+            Boolean isSuccess,
+            Integer reason
     ) {}
 }
