@@ -1,7 +1,9 @@
 package io.hhplus.step2.domain;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 @Entity
 @Table(name = "lecture")
 @Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Lecture extends BaseTime {
 
     @Id

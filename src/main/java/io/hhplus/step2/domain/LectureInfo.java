@@ -2,13 +2,16 @@ package io.hhplus.step2.domain;
 
 import io.hhplus.step2.application.model.LectureInfoWithLectureName;
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.*;
 
 import java.util.Date;
 
 @Table(name = "lecture_info")
 @Entity
 @Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
 public class LectureInfo extends BaseTime{
 
     @Id
