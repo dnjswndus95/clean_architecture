@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    show-sql: true
+  application:
+    name: step2
+  datasource:
+    url: jdbc:mysql://localhost:3306/clean_architecture
+    username: root
+    password: juyeoun1158!
+    driver-class-name: com.mysql.cj.jdbc.Driver
